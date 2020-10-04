@@ -1,0 +1,19 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "terminal tool",
+  "main": "caesar_cli",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "caesar",
+    "cipher"
+  ],
+  "author": "nikita3026",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^6.1.0",
+    "through2": "^4.0.2"
+  }
+}
