@@ -10,7 +10,7 @@ module.exports = (args) => {
             this.push(dataEncoding(chunk, args.shift, args.cliAction))
             callback()
         }),
-        args.output ? fs.createWriteStream(args.output) : process.stdout,
+        args.output ? fs.createWriteStream(args.output, {'flags': 'a'}) : process.stdout,
         (err) => {
             if(err) console.error('Error! Unable to read or write to file. Please, check file paths.');
             else console.log('Record succeeded.');

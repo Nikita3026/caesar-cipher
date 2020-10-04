@@ -13,5 +13,5 @@ try{
     paramsErrorCheck(program.opts().shift, program.opts().cliAction)
     createPipeline(program.opts());
 }catch(error) {
-    console.log(error.message);
+    console.error(error.message);
 }
